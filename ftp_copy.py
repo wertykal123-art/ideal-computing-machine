@@ -229,6 +229,9 @@ def process_once(cfg, dry_run):
 
     moved = 0
     try:
+        # make sure the fixed folders exist so a fresh server needs no setup
+        ensure_remote_dir(src, src_cfg["dir"])
+        ensure_remote_dir(src, src_cfg["archive_dir"])
         for name in list_dir(src, src_cfg["dir"]):
             folder_path = posixpath.join(src_cfg["dir"], name)
             if folder_path == src_cfg["archive_dir"]:
