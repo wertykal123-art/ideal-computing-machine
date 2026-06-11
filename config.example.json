@@ -1,0 +1,23 @@
+{
+  "source": {
+    "host": "ftp.source.com",
+    "port": 21,
+    "user": "alice",
+    "password": "secret1",
+    "tls": false,
+    "dir": "/outgoing",
+    "archive_dir": "/outgoing_archive"
+  },
+  "destination": {
+    "host": "ftp.dest.com",
+    "port": 21,
+    "user": "bob",
+    "password": "secret2",
+    "tls": false,
+    "dir": "/incoming"
+  },
+  "archive_retention_hours": 168,
+  "poll_interval_seconds": 0,
+  "chunk_size": 65536,
+  "timeout": 30
+}
