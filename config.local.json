@@ -1,0 +1,21 @@
+{
+  "source": {
+    "host": "127.0.0.1",
+    "port": 2121,
+    "user": "anonymous",
+    "password": "",
+    "dir": "/outgoing",
+    "archive_dir": "/outgoing_archive"
+  },
+  "destination": {
+    "host": "127.0.0.1",
+    "port": 2122,
+    "user": "anonymous",
+    "password": "",
+    "dir": "/incoming"
+  },
+  "archive_retention_hours": 168,
+  "poll_interval_seconds": 0,
+  "chunk_size": 65536,
+  "timeout": 30
+}
